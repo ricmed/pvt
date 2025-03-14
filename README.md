@@ -53,7 +53,7 @@ Este script é responsável por restaurar o banco de dados a partir de um arquiv
 ### 1. Clone o repositório
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/ricmed/pvt.git
 cd <diretorio-do-repositorio>
 ```
 
