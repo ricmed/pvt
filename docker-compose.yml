@@ -23,7 +23,7 @@ services:
       - pvt_network
 
   db:
-    image: postgres:16
+    image: postgres:17
     container_name: pvt_db
     restart: unless-stopped
     ports:
