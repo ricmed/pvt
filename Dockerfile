@@ -1,5 +1,4 @@
-#FROM php:7.4.33-apache
-FROM php:7.2-apache
+FROM php:7.4.33-apache
 
 # Instalar dependências
 RUN apt-get update && apt-get install -y \
@@ -38,6 +37,7 @@ COPY --from=composer:2.0 /usr/bin/composer /usr/bin/composer
 # Configurar o Apache
 RUN a2enmod rewrite
 RUN sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
+RUN echo 'ServerName localhost' >> /etc/apache2/apache2.conf
 
 # Configurar o VirtualHost para servir a aplicação em /pvt
 RUN echo '<VirtualHost *:80>\n\
