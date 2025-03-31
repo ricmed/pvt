@@ -6,7 +6,7 @@ Este repositório contém a configuração Docker para executar o sistema PVT (P
 
 ### Dockerfile
 Este arquivo contém as instruções para construir a imagem Docker da aplicação. Ele:
-- Utiliza PHP 7.2 com Apache como base
+- Utiliza PHP 7.4.33 com Apache como base
 - Instala as dependências necessárias (PostgreSQL, GD, ZIP, etc.)
 - Configura o Apache para servir a aplicação em `/pvt`
 - Define limites de upload (50MB) e memória (512MB)

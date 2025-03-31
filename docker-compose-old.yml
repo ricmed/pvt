@@ -1,6 +1,8 @@
 services:
   app:
-    image: ricmed/cgvivapvt:v1.1
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: pvt_app
     restart: unless-stopped
     ports:
